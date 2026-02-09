@@ -118,17 +118,4 @@ CSV export option
 
 Charu Garg
 
-📜 License
 
-This project is intended for educational and academic use.
-
-
----
-
-This is **clean, professional, and GitHub-ready**.  
-If you want:
-- a **shorter README**
-- a **resume-project style README**
-- or a **college submission version**
-
-just tell me which one.
