@@ -34,26 +34,8 @@ The application runs completely on a local machine and is suitable for academic 
 
 ---
 
-## Project Structure
-ResumeParser/
-│
-├── app.py
-├── resume.db
-├── resume_data.xlsx
-├── rf_classifier_job_recommendation.pkl
-├── tfidf_vectorizer_job_recommendation.pkl
-│
-├── templates/
-│ └── resume.html
-│
-├── static/
-│ └── style.css
-│
-├── requirements.txt
-└── README.md
 
 
----
 
 ## How It Works
 1. User uploads one or more PDF resumes
