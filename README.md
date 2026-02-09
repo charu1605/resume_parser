@@ -1,120 +1,134 @@
-# Resume Parsing System (Multi-Resume Upload with Database Storage)
+# Resume Parsing System (Local & Multi-Resume Support)
 
-## Project Overview
-This project is a Resume Parsing System built using Python and Flask.  
-It allows users to upload multiple resumes at the same time, extract important information, and store the parsed data locally in a database and an Excel file.
+## 📌 Overview
+This project is a **local Resume Parsing System** developed using **Python and Flask**.  
+It allows users to upload **multiple resumes at the same time**, automatically extracts important information, and stores the results in both a **SQLite database** and an **Excel file**.
 
-The application runs completely on a local machine and is suitable for academic projects, internship work, and resume screening demonstrations.
+The system runs completely **offline on a local machine** and demonstrates practical use of **NLP-based text extraction**.
 
 ---
 
-## Objectives
-- Parse multiple resumes simultaneously
-- Extract key information such as:
+## 🎯 Objectives
+- Parse **multiple resumes simultaneously**
+- Extract key details:
   - Name
   - Email
   - Phone number
   - Skills
   - Education
-- Store extracted data locally
-- Save results to:
-  - SQLite Database
-  - Excel file
+- Save parsed data:
+  - Into a **SQLite database**
+  - Into an **Excel (.xlsx) file**
+- Run the application **locally**
 
 ---
 
-## Tech Stack
-- Python
-- Flask
-- Scikit-learn
-- NLP (TF-IDF, Regex)
-- SQLite
-- Pandas
-- HTML, CSS
+## 🛠 Technologies Used
+- Python  
+- Flask  
+- SQLite  
+- Pandas  
+- PDF Parsing Libraries  
+- HTML / CSS  
 
 ---
 
+## ⚙️ Setup Instructions
 
-
-
-## How It Works
-1. User uploads one or more PDF resumes
-2. Text is extracted from each resume
-3. NLP techniques process the text
-4. Important fields are extracted
-5. Data is stored in:
-   - SQLite database (`resume.db`)
-   - Excel file (`resume_data.xlsx`)
-6. Each uploaded resume is saved as a separate entry
-
----
-
-## Installation & Setup
-
-### Clone Repository
+### 1️⃣ Create and Activate Virtual Environment
 ```bash
-git clone https://github.com/your-username/resume-parser.git
-cd resume-parser
-Create Virtual Environment
 python -m venv venv
 venv\Scripts\activate
-Install Dependencies
+2️⃣ Install Required Packages
 pip install -r requirements.txt
-Run the Application
+
+3️⃣ Run the Application
 python app.py
-Open browser and visit:
+
+4️⃣ Access the App
+
+Open your browser and go to:
 
 http://127.0.0.1:5000/
-Resume Upload
-Upload single or multiple PDF resumes
 
-Each resume is parsed individually
+🚀 How the System Works
 
-Parsed data is automatically saved
+User uploads one or multiple PDF resumes
 
-Database
-Database file: resume.db
+Each resume is parsed automatically
 
-Created automatically if not present
+The system extracts:
 
-Stores parsed resume information locally
+Candidate name
 
-Excel Output
-File: resume_data.xlsx
+Email address
 
-Created automatically
+Phone number
 
-Each uploaded resume adds a new row
+Skills
 
-Features
-Multi-resume upload
+Education details
 
-Automatic database creation
+The extracted information is:
 
-Local data storage
+Inserted into a SQLite database
 
-Excel export
+Appended as a new row in an Excel file
 
-Simple web interface
+Each resume is stored independently, without overwriting previous entries.
 
-Limitations
-Accuracy depends on resume format
+🗄 Database Behavior
 
-Scanned PDFs may not extract text properly
+Database file is created automatically on first run
 
-Skill extraction is keyword-based
+Each uploaded resume creates a new record
 
-Future Enhancements
-OCR support for scanned resumes
+Data persists even after restarting the application
 
-Improved NLP-based skill extraction
+📊 Excel File Behavior
 
-Resume ranking and filtering
+Excel file is created automatically if not present
+
+Each resume adds a new row
+
+Useful for quick review and reporting
+
+✅ Key Features
+
+✔ Multiple resume upload
+✔ Automatic data extraction
+✔ SQLite database storage
+✔ Excel export
+✔ Runs locally
+✔ Simple and clean interface
+
+🔮 Future Improvements
+
+Resume category prediction
+
+Job role recommendation
+
+Resume ranking system
 
 Admin dashboard
 
-Author
+CSV export option
+
+👩‍💻 Author
+
 Charu Garg
 
-Conclusion
-This project successfully implements a local resume parsing system capable of processing multiple resumes at once and storing the extracted data in both a database and an Excel file.
+📜 License
+
+This project is intended for educational and academic use.
+
+
+---
+
+This is **clean, professional, and GitHub-ready**.  
+If you want:
+- a **shorter README**
+- a **resume-project style README**
+- or a **college submission version**
+
+just tell me which one.
